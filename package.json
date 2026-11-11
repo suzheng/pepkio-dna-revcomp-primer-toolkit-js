@@ -2,6 +2,7 @@
   "name": "pepkio-dna-revcomp-primer-toolkit",
   "version": "0.1.0",
   "description": "Reverse, complement, and reverse-complement DNA with inline primer QC (GC%, Wallace Tm, IUPAC support) and batch CSV export via the Pepkio REST API.",
+  "readme": "README_NPM.md",
   "type": "module",
   "engines": {
     "node": ">=18"
@@ -20,6 +21,7 @@
   "files": [
     "dist",
     "README.md",
+    "README_NPM.md",
     "LICENSE"
   ],
   "scripts": {
@@ -30,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suzheng/pepkio-dna-revcomp-primer-toolkit-js.git"
+    "url": "git+https://github.com/pepkio/pepkio-dna-revcomp-primer-toolkit-js.git"
   },
   "bugs": {
-    "url": "https://github.com/suzheng/pepkio-dna-revcomp-primer-toolkit-js/issues"
+    "url": "https://github.com/pepkio/pepkio-dna-revcomp-primer-toolkit-js/issues"
   },
   "homepage": "https://www.pepkio.com/tools/dna-revcomp-primer-toolkit",
   "keywords": [
@@ -45,7 +47,10 @@
     "molecular-biology",
     "iupac",
     "wallace-tm",
+    "melting-temperature",
     "gc-content",
+    "pcr",
+    "bioinformatics",
     "pepkio",
     "laboratory-tools",
     "life-sciences",
