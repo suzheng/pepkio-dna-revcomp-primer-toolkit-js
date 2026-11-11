@@ -1,0 +1,73 @@
+{
+  "name": "pepkio-dna-revcomp-primer-toolkit",
+  "version": "0.1.0",
+  "description": "Reverse, complement, and reverse-complement DNA with inline primer QC (GC%, Wallace Tm, IUPAC support) and batch CSV export via the Pepkio REST API.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "pepkio-dna-revcomp-primer-toolkit": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run --exclude '**/integration.test.ts'",
+    "test:integration": "vitest run integration.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suzheng/pepkio-dna-revcomp-primer-toolkit-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/suzheng/pepkio-dna-revcomp-primer-toolkit-js/issues"
+  },
+  "homepage": "https://www.pepkio.com/tools/dna-revcomp-primer-toolkit",
+  "keywords": [
+    "dna-revcomp-primer-toolkit",
+    "dna",
+    "primer",
+    "revcomp",
+    "reverse-complement",
+    "molecular-biology",
+    "iupac",
+    "wallace-tm",
+    "gc-content",
+    "pepkio",
+    "laboratory-tools",
+    "life-sciences",
+    "typescript",
+    "node",
+    "rest-api"
+  ],
+  "author": "Pepkio Team",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "commander": "^15.1.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10",
+    "tsup": "^9.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  }
+}
