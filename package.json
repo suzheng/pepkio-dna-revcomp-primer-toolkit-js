@@ -16,7 +16,7 @@
     }
   },
   "bin": {
-    "pepkio-dna-revcomp-primer-toolkit": "./dist/cli.js"
+    "pepkio-dna-revcomp-primer-toolkit": "dist/cli.js"
   },
   "files": [
     "dist",
